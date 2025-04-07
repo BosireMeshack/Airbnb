@@ -1,0 +1,152 @@
+header {
+  margin: 0;
+}
+
+.navigation {
+  position: relative;
+  z-index: 2;
+}
+
+/* Fixed Navbar */
+.navbar {
+  background: white;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Position elements above carousel */
+.overlay-content {
+  position: absolute;
+  top: 35%;
+  margin-top: 40px;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  z-index: 1;
+  
+}
+
+.overlay-content h2 {
+  text-decoration: underline;
+}
+
+.search-bar {
+  position: absolute;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+  width: 70%;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+/* Input and buttons within the search bar */
+.search-bar input[type="text"],
+.search-bar input[type="date"],
+.search-bar input[type="number"] {
+  min-width: 180px;
+}
+
+/* Guest control section */
+.search-bar .d-flex {
+  gap: 10px;
+}
+
+.guest-btn,
+.search-btn {
+  width: auto;
+  min-width: 40px;
+}
+
+/* Stacked layout for small screens */
+@media (max-width: 786px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 0;
+    transform: translate(-50%, -3%);
+  }
+
+  .search-bar div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .guest-btn {
+    width: 100%;
+  }
+  .overlay-content {
+    position: absolute;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  .overlay-content h1,
+  h2 {
+    padding:10px; 
+    font-size: 20px;
+  }
+  /* Carousel styling */
+  .carousel {
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    height: 60vh; 
+    background-position: top center; 
+  }
+}
+/* Media query for even smaller screens (extra small devices) */
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 50vh; 
+    background-position: center center; 
+  }
+
+  .overlay-content {
+    font-size: 20px; 
+    transform: translate(-50%, -130%);
+     
+  }
+}
+
+/* Carousel styling */
+.carousel {
+  position: relative;
+  max-height: 550px;
+  overflow: hidden;
+}
+
+
+.carousel-item {
+  height: 100vh; 
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%);
+}
