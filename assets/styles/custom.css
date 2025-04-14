@@ -153,5 +153,24 @@ header {
 }
 .card {
     padding: 10px;
-    height: 25vh;
+    height: 30vh;
+}
+.card .row {
+
+    margin-bottom: 0;
+}
+
+.custom-footer-row {
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.card-body {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-body:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }

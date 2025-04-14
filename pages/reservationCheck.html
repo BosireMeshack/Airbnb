@@ -1,0 +1,52 @@
+<template id="bookingFormTemplate">
+    <div class="row g-5">
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <h4 class="mb-3">What’s Included</h4>
+        <ul class="list-group" id="featureList"></ul>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4">
+          <h4 class="mb-4 text-primary fw-bold" id="priceHeader">Ksh 0 / night</h4>
+  
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="checkIn" class="form-label">Check-in Date</label>
+              <input type="date" class="form-control" id="checkIn" required>
+            </div>
+  
+            <div class="mb-3">
+              <label for="checkOut" class="form-label">Check-out Date</label>
+              <input type="date" class="form-control" id="checkOut" required>
+            </div>
+  
+            <div class="mb-3">
+              <label for="guests" class="form-label">Number of Adults</label>
+              <input type="number" class="form-control" id="guests" min="1" max="6" required>
+            </div>
+  
+            <div class="mb-3">
+              <label for="children" class="form-label">Number of Children</label>
+              <input type="number" class="form-control" id="children" min="0" max="6">
+            </div>
+  
+            <div class="mb-4">
+              <label for="costEstimate" class="form-label">Estimated Total</label>
+              <select class="form-select" id="costEstimate" disabled>
+                <option selected>Select dates to view total</option>
+              </select>
+            </div>
+  
+            <div class="d-flex justify-content-between">
+              <button type="reset" class="btn btn-secondary">Reset</button>
+              <button type="submit" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-outline-info">Make Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </template>
+  
