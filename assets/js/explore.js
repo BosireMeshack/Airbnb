@@ -1,6 +1,6 @@
 
 
-fetch('/assets/data/listing.json')
+fetch('../assets/data/listing.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById("listingGrid");

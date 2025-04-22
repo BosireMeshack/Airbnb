@@ -3,41 +3,45 @@
       "id": "1",
       "title": "Waiyaki Way Gardens Amazing Homes",
       "location": "Waiyaki Way",
-      "price": "Ksh 2000",
+      "price": 2000,
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "/assets/images/waiyaki way airbnb.jpeg",
-      "gallery": ["/assets/images/waiyakiway1.jpeg"],
+      "image": "../assets/images/waiyaki way airbnb.jpeg",
+      "gallery": ["../assets/images/waiyakiway1.jpeg"],
       "reviews": 36,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
-      "mapLink": "https://www.google.com/maps?q=waiyaki+way+nairobi"
+      "mapLink": "https://www.google.com/maps?q=waiyaki+way+nairobi",
+      "video": "../assets/videos/waiyaki.mp4"
     },
     {
       "id": "2",
       "title": "Kamakis Highway Homes",
       "location": "Kamakis",
-      "price": "Ksh 6000",
+      "price": 6000,
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "/assets/images/kamakis.png",
+      "image": "../assets/images/kamakis.png",
       "gallery": [],
       "reviews": 28,
-      "mapLink": "https://www.google.com/maps?q=kamakis+kenya"
+      "mapLink": "https://www.google.com/maps?q=kamakis+kenya",
+       "video": "../assets/videos/waiyaki.mp4"
     },
     {
       "id": "3",
       "title": "Winchester Gardens Amazing Homes",
       "location": "Westlands",
-      "price": "Ksh 6000",
+      "price": 6000,
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "/assets/images/winchester1.jpeg",
-      "gallery": ["/assets/images/winchester2.jpeg", "/assets/images/winchester3.png"],
+      "image": "../assets/images/winchester1.jpeg",
+      "gallery": ["../assets/images/winchester2.jpeg", "../assets/images/winchester3.png"],
       "reviews": 42,
-      "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands"
+      "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
+      "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands",
+      "video": "../assets/videos/Operating the Master Lock.mp4"
     }
   ]
   

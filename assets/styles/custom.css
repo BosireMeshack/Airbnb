@@ -174,3 +174,13 @@ header {
   transform: scale(1.02);
   cursor: pointer;
 }
+
+#videoSection {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  
+}
+
+#videoSection h4 {
+  font-weight: 600;
+}

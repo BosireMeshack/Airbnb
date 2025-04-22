@@ -41,7 +41,7 @@
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link text-primary" href="index.html">Home</a>
+                        <a class="nav-link text-primary" href="../../index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active text-primary" href="explore.html">Explore</a>
@@ -78,21 +78,14 @@
 
 
    
-      <!-- <div class="row">
-        <div class="col-md-6">
-          <h3>What This Place Offers</h3>
-        </div>
-        <div class="col-md-6">
-          <form action="">
+     <!-- Listing Video Section -->
+<div class="container my-5" id="videoSection"></div>
 
-          </form>
-        </div>
-      </div> -->
   
 
 
             <!-- Explore Section -->
-  <section class="container my-5">
+<section class="container my-5">
     <div class="text-center mb-4">
         <h3>Similar Properties</h3>
         <h5>Choose your favourite Uzuri apartment</h5>
@@ -101,6 +94,8 @@
     <div class="row g-4" id="listingGrid">
       <!-- Listings will be injected here -->
     </div>
+
+
   </section>
 </main>
         <footer class="container py-5">
@@ -175,59 +170,72 @@
 
 
   <!-- <script src="/assets/js/explore.js"></script> -->
-  <script src="/assets/js/listing.js"></script>
+  <script src="../assets/js/listing.js"></script>
 </body>
 </html>
 
+<!-- Availability checking form -->
 <template id="bookingFormTemplate">
   <div class="row g-5">
     <!-- Left Column -->
     <div class="col-md-6">
-      <h4 class="mb-3">What’s Included</h4>
+      <h4 class="mb-3">What This Place Offers</h4>
       <ul class="list-group" id="featureList"></ul>
     </div>
 
     <!-- Right Column -->
-    <div class="col-md-6">
-      <div class="card shadow-sm p-4">
-        <h4 class="mb-4 text-primary fw-bold" id="priceHeader">Ksh 0 / night</h4>
-
-        <form id="bookingForm">
-          <div class="mb-3">
-            <label for="checkIn" class="form-label">Check-in Date</label>
+    <div class="col-md-6 d-flex justify-content-end">
+    <div class="col-md-10">
+      <h4 class="mb-3">Check Availability</h4>
+      <div class="card shadow-sm p-3">
+        <h5 class="mb-3 text-primary fw-bold" id="priceHeader">Ksh 0 / night</h5>
+    
+        <form id="bookingForm" class="row g-2">
+          <!-- Row: Check-in and Check-out -->
+          <div class="col-6">
+            <label for="checkIn" class="form-label">Check-in</label>
             <input type="date" class="form-control" id="checkIn" required>
           </div>
-
-          <div class="mb-3">
-            <label for="checkOut" class="form-label">Check-out Date</label>
+    
+          <div class="col-6">
+            <label for="checkOut" class="form-label">Check-out</label>
             <input type="date" class="form-control" id="checkOut" required>
           </div>
-
-          <div class="mb-3">
-            <label for="guests" class="form-label">Number of Adults</label>
+    
+          <!-- Row: Adults and Children -->
+          <div class="col-6">
+            <label for="guests" class="form-label">Adults</label>
             <input type="number" class="form-control" id="guests" min="1" max="6" required>
           </div>
-
-          <div class="mb-3">
-            <label for="children" class="form-label">Number of Children</label>
+    
+          <div class="col-6">
+            <label for="children" class="form-label">Children</label>
             <input type="number" class="form-control" id="children" min="0" max="6">
           </div>
-
-          <div class="mb-4">
+    
+          <!-- Row: Cost Estimate Dropdown -->
+          <div class="col-12 d-none" id="costWrapper">
             <label for="costEstimate" class="form-label">Estimated Total</label>
             <select class="form-select" id="costEstimate" disabled>
               <option selected>Select dates to view total</option>
             </select>
           </div>
-
-          <div class="d-flex justify-content-between">
-            <button type="reset" class="btn btn-secondary">Reset</button>
-            <button type="submit" class="btn btn-primary">Book Now</button>
-            <button type="button" class="btn btn-outline-info">Make Inquiry</button>
+    
+          <!-- Row: Reset and Inquiry -->
+          <div class="col-12 d-flex justify-content-between">
+            <button type="reset" class="btn btn-outline-secondary btn-sm">Reset</button>
+            <button type="button" class="btn btn-outline-info btn-sm">Make Inquiry</button>
+          </div>
+    
+          <!-- Row: Submit -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Check Availability</button>
           </div>
         </form>
       </div>
     </div>
+    </div>
+    
   </div>
 </template>
 
