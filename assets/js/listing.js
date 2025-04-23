@@ -11,7 +11,7 @@ fetch("../assets/data/listing.json")
             gallerySection.innerHTML = `<h3 class="text-danger">Listing not found.</h3>`;
             return;
         }
-        // Rendering video
+        //Rendering video
         renderListingVideo(listing);
 
         const {
@@ -36,12 +36,13 @@ fetch("../assets/data/listing.json")
                 videoHTML = `
             <div class="ratio ratio-16x9">
               <iframe src="${listing.video}" title="Listing Video" allowfullscreen class="rounded shadow-sm"></iframe>
-            </div>
-          `;
-            } else {
-                // Local video file
-                videoHTML = `
-            <video controls class="w-100 rounded shadow-sm">
+            </div>`;
+            } 
+            else 
+            {
+            // Local video file
+            videoHTML = `
+            <video controls class="w-100 rounded shadow-sm" style="height: 70vh; object-fit: cover;">
               <source src="${listing.video}" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -55,7 +56,7 @@ fetch("../assets/data/listing.json")
         }
 
 
-        // ============ Booking Section ============
+        // Booking Section 
 
         const template = document.getElementById("bookingFormTemplate");
         const clone = template.content.cloneNode(true);
@@ -104,8 +105,6 @@ fetch("../assets/data/listing.json")
                 .join("")}
             </div>
           </div>
-          
-          
         </div>
     
 
@@ -231,7 +230,7 @@ fetch("../assets/data/listing.json")
 
         });
 
-        // ============ Booking Cost Calculation ============
+        // Booking Cost Calculation 
 
         const checkIn = document.getElementById("checkIn");
         const checkOut = document.getElementById("checkOut");
@@ -239,7 +238,7 @@ fetch("../assets/data/listing.json")
         const costWrapper = document.getElementById("costWrapper");
 
 
-        // 4. Cost calculation function using the dynamic price
+        // Cost calculation function using the dynamic price
         function calculateCost() {
             const inDate = new Date(checkIn.value);
             const outDate = new Date(checkOut.value);
@@ -258,7 +257,7 @@ fetch("../assets/data/listing.json")
             }
         }
 
-        // 5. Attach listeners
+        //Attach listeners
         checkIn.addEventListener("change", calculateCost);
         checkOut.addEventListener("change", calculateCost);
     })

@@ -8,16 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Icon link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+
 </head>
 
 <body>
-    
-
     <div class="container">
         <header>
             <div class="col-12">
@@ -56,7 +53,7 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Blog</a>
+                        <a class="nav-link text-primary" href="blog.html">Blog</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link text-primary" href="#">Contact</a>
@@ -65,7 +62,6 @@
                   </div>
                 </div>
               </nav>
-        
         </header>
 <main>
       <!-- gallerySection -->
@@ -77,11 +73,119 @@
 </div>
 
 
-   
      <!-- Listing Video Section -->
 <div class="container my-5" id="videoSection"></div>
 
+<!-- Actual booking -->
+<div class="bookingIdentification">
+  <div class="row g-5">
+    
+    <div class="col-md-8 d-flex justify-content-left">
+    <div class="col-md-10">
+      <h4 class="mb-3">House Rules</h4>
+       <article>
+        <b>Check-in from 12:00 PM</b>
+        <p>You're welcome to check in anytime from 12 noon or 1 pm on your arrival day. If the unit happens to be ready earlier (depending on whether the unit had a guest the previous night), we'd be happy to offer an early check-in before noon.</p>
+    
+        <b>Check-out by 10:00 AM</b>
+        <p>We request our guests to check out by 10:00 am on your departure day, to allow us sufficient time to prepare the unit for our next guest arriving at 12 noon the following day.</p>
+    
+
+      </article>
+      
+        <h5 class="mt-4">Guest Details</h5>
+    
+        <form id="bookingForm">
+          <div class="row g-5">
+          <div class="col-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+    
+          <div class="col-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
   
+          <div class="col-6">
+            <label for="homeCountry" class="form-label">Home Country</label> <br>
+            <select name="homeCountry" id="homeCountry" required>
+              <option value="">-- Select Country --</option>
+              <option value="KE">Kenya</option>
+              <option value="UG">Uganda</option>
+              <option value="TZ">Tanzania</option>
+              <option value="NG">Nigeria</option>
+              <option value="ZA">South Africa</option>
+              <option value="US">United States</option>
+              <option value="GB">United Kingdom</option>
+              <option value="IN">India</option>
+              <option value="CN">China</option>
+              <option value="CA">Canada</option>
+              <option value="AU">Australia</option>
+            </select>
+          </div>
+    
+          <div class="col-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" required>
+          </div>
+
+          <div class="col-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+    
+          <h5 class="mt-5">Identification Details</h5>
+          <p class="mt-3">In compliance with the government directive concerning the operation of Airbnb accommodations, we require your identification document before you check in. Please attach a copy of your National ID or Passport below. If you're not ready to upload your identification document right now, that's okay. You can provide it later after completing the booking. The provided identification documents serve the sole purpose of facilitating identification.</p>
+
+          <div class="mb-3 d-flex gap-3 flex-wrap">
+            <label>
+              <input type="radio" name="idType" class="form-check-input" onclick="toggleUpload(true)">
+              ID
+            </label>
+          
+            <label>
+              <input type="radio" name="idType" class="form-check-input" onclick="toggleUpload(false)">
+              Passport
+            </label>
+
+            <label>
+              <input type="radio" name="idType" class="form-check-input" onclick="toggleUpload(false)">
+              Residence Permit
+            </label>
+          </row>
+        </div>
+      
+          <div id="uploadField" class="upload-icon-box">
+            <label for="fileUpload">Upload your file:</label>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Click or drag a file here to upload</p>
+            <input type="file" id="fileUpload" name="fileUpload">
+          </div>
+          <h5>Special Requests</h5>
+          <p>Special requests are not guaranteed, but the property will try its best to meet your needs. You can always make a special request after completing your booking.</p>
+
+          <h5>Cancellation Policy</h5>
+          <p>Free Cancellation One Month Before Check In</p> 
+          <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" id="acceptPolicy" required>
+            <label class="form-check-label" for="acceptPolicy">
+              I agree to the <a href="#policy" target="_blank">terms and conditions</a>
+            </label>
+          </div>
+          
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-50">Submit Booking</button>
+          </div>
+        </div>
+      </form>
+     
+    </div>
+    </div>
+    
+  </div>
+</div>
 
 
             <!-- Explore Section -->
@@ -97,6 +201,7 @@
 
 
   </section>
+
 </main>
         <footer class="container py-5">
             <div class="row mb-4 align-items-center custom-footer-row">

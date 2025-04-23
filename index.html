@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Uzuri Place Homes</title>
 
   <!-- Bootstrap CDN link-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- Icon link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,8 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="assets/styles/custom.css" />
-
+  <link rel="stylesheet" href="assets/styles/custom.css"/>
 </head>
 
 <body>
@@ -37,7 +35,7 @@
         <div class="container">
 
           <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="40" />
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="40"/>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -74,46 +72,48 @@
       <div id="carouselOuter" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000"
-            style="background-image: url('assets/images/winchester3.png');">
+            style="background-image: url('assets/images/westlands/winchester3.png');">
 
           </div>
 
           <div class="carousel-item" data-bs-interval="4000"
-            style="background-image: url('assets/images/winchester3.png');">
+            style="background-image: url('assets/images/kamakis/kamakis1.jpeg');">
 
           </div>
 
           <div class="carousel-item" data-bs-interval="4000"
-            style="background-image: url('assets/images/winchester1.jpeg');">
+            style="background-image: url('assets/images/westlands/winchester1.jpeg');">
 
           </div>
         </div>
 
         <!-- Overlay content on carousel -->
         <div class="overlay-content text-white text-center">
-          <h2><u>Uzuri Apartments</u></h2>
+          <h2>Uzuri Apartments</h2>
           <h1>In Just A Click</h1>
+
           <!-- Search bar -->
           <div class="search-bar">
             <div>
-              <input type="text" class="form-control" placeholder="Location" />
+              <input type="text" class="form-control" placeholder="Location"/>
             </div>
             <div>
-              <!-- <label for="checkin" class="custom-placeholder">Check in</label> -->
-              <input type="date" id="checkin" class="form-control" placeholder="Check in" />
+             
+              <input type="date" id="checkin" class="form-control"/>
               <!-- <input type="text" id="checkin" class="form-control" placeholder="Check in" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" /> -->
 
             </div>
             <div>
               <!-- <input type="text" id="checkin" class="form-control" placeholder="Check out" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" /> -->
-              <input type="date" id="checkin" class="form-control" placeholder="Check out" />
+              <input type="date" id="checkout" class="form-control"/>
             </div>
 
             <div class="d-flex align-items-center">
-              <button class="btn btn-outline-secondary guest-btn">-</button>
-              <input type="number" class="form-control mx-2 text-center" placeholder="Guests" min="1" />
-              <button class="btn btn-outline-secondary guest-btn">+</button>
+              <button class="btn btn-outline-secondary guest-btn" onclick="changeGuestCount(-1)">-</button>
+              <input type="number" id="guestInput" class="form-control mx-2 text-center" placeholder="Guests" min="1" value="1"/>
+              <button class="btn btn-outline-secondary guest-btn" onclick="changeGuestCount(1)">+</button>
             </div>
+            
 
             <div>
               <button class="btn btn-primary search-btn">Search</button>
@@ -121,9 +121,11 @@
 
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselOuter" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselOuter" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
@@ -133,6 +135,7 @@
           <button type="button" data-bs-target="#carouselOuter" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#carouselOuter" data-bs-slide-to="2"></button>
         </div>
+
       </div>
     </header>
 
@@ -140,18 +143,18 @@
     <main class="container py-5 mt-5" id="#content">
       <!-- Featured Listings -->
       <section class="mb-5">
+        
         <div class="text-center mb-4">
           <h3>Featured Properties</h3>
           <h5>Choose your favourite Uzuri apartment</h5>
         </div>
+
         <div class="row g-4">
           <!-- Listings card -->
-
-          
-          <div class="col-md-4">
+           <div class="col-md-4">
             <a href="pages/explore.html?id=1" class="text-decoration-none text-dark">
             <div class="card-body position-relative bg-light rounded-top">
-              <img src="assets/images/waiyaki way airbnb.jpeg" class="img-fluid mb-3" alt="waiyakiway.jpeg">
+              <img src="assets/images/waiyakiway/waiyakiwayairbnb.jpeg" class="img-fluid mb-3" alt="waiyakiway.jpeg">
               <span class="position-absolute top-50 end-0 m-3 bg-white border rounded-pill px-3 py-1"
                 style="margin-bottom:0;">Ksh 2000</span>
             </div>
@@ -193,8 +196,8 @@
                 </span>
               </p>
               <p class="mb-2">
-                <i class="fa fa-bed" style="font-size:24px"></i></i> 1 Bedroom
-                </i>
+                <i class="fa fa-bed" style="font-size:24px"></i> 1 Bedroom
+               
                 <i class="fa fa-bath" style="font-size:24px"></i> 1 Bathroom
                 <i class="bi bi-car-front ms-3"></i> Parking
               </p>
@@ -223,7 +226,7 @@
           <div class="col-md-4">
             <a href="pages/explore.html?id=2" class="text-decoration-none text-dark">
             <div class="card-body position-relative bg-light rounded-top">
-              <img src="assets/images/kamakis.png" class="img-fluid mb-3" alt="kamakis.png">
+              <img src="assets/images/kamakis/kamakis1.jpeg" class="img-fluid mb-3" alt="kamakis.png">
               <span class="position-absolute top-50 end-0 m-3 bg-white border rounded-pill px-3 py-1">Ksh 6000</span>
             </div>
             <div class="card-footer bg-white text-start">
@@ -259,10 +262,10 @@
                       d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
                   </svg></span>
               </p>
-              </p>
+              
               <p class="mb-2">
-                <i class="fa fa-bed" style="font-size:24px"></i></i> 1 Bedroom
-                </i>
+                <i class="fa fa-bed" style="font-size:24px"></i> 1 Bedroom
+                
                 <i class="fa fa-bath" style="font-size:24px"></i> 1 Bathroom
                 <i class="bi bi-car-front ms-3"></i> Parking
               </p>
@@ -290,7 +293,7 @@
           <div class="col-md-4">
             <a href="pages/explore.html?id=3" class="text-decoration-none text-dark">
             <div class="card-body position-relative bg-light rounded-top">
-              <img src="assets/images/winchester1.jpeg" class="img-fluid mb-3" alt="winchester1.jpeg">
+              <img src="assets/images/westlands/winchester1.jpeg" class="img-fluid mb-3" alt="winchester1.jpeg">
               <span class="position-absolute top-50 end-0 m-3 bg-white border rounded-pill px-3 py-1"
                 style="position:absolute;top: 50%;">Ksh 6000</span>
             </div>
@@ -328,10 +331,10 @@
                       d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
                   </svg></span>
               </p>
-              </p>
+             
               <p class="mb-2">
-                <i class="fa fa-bed" style="font-size:24px"></i></i> 1 Bedroom
-                </i>
+                <i class="fa fa-bed" style="font-size:24px"></i> 1 Bedroom
+               
                 <i class="fa fa-bath" style="font-size:24px"></i> 1 Bathroom
                 <i class="bi bi-car-front ms-3"></i> Parking
               </p>
@@ -356,11 +359,20 @@
           </div>
           <!-- col-listing -->
         </div>
-
+          <!-- More listings -->
         <div class="text-center mt-4">
+          <div id="moreContent" style="display: none;">
+            <div class="container my-5">
+              <div class="row" id="property-list">
+                <!-- Cards will be inserted here -->
+              </div>
+            </div>
+          </div>
+
           <!-- more listings button -->
-          <a href=""><button class="btn btn-outline-primary">SEE MORE LISTINGS</button></a>
+          <button id="showMoreBtn" class="btn btn-primary mt-2" onclick="toggleMore()">Show More</button>
         </div>
+
       </section>
 
       <!-- How it Works -->
@@ -368,6 +380,7 @@
         <div class="text-center mb-4">
           <h3 >How it Works</h3>
         </div>
+
         <div class="row g-4">
 
           <div class="col-md-4">
@@ -521,7 +534,7 @@
         <div class="col-md-4">
           
           <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="40" />
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="40"/>
           </a>
           <p>Uzur apartments is a real estate company in Kenya offering
             various real estate services including Airbnb accommodation and Interior Design</p>
@@ -551,7 +564,7 @@
       <i class="bi bi-instagram mx-1"></i>
       <i class="fa fa-youtube-play" style="font-size:18px"></i>
     
-      <hr />
+      <hr/>
       <div class="row">
         <div class="col-md-6">
           <h5>Designed By Meshack Bosire</h5>
@@ -564,6 +577,75 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/loadListings.js"></script>
+  
+  <script>
+    /*Script for the guest number buttons */
+    function changeGuestCount(delta) {
+    const input = document.getElementById("guestInput");
+    let value = parseInt(input.value) || 1;
+
+    value += delta;
+
+    if (value < parseInt(input.min)) {
+      value = parseInt(input.min);
+    }
+
+    input.value = value;
+  }
+
+  /*script for show more*/
+  function toggleMore() {
+    const moreContent = document.getElementById("moreContent");
+    const btn = document.getElementById("showMoreBtn");
+
+    if (moreContent.style.display === "none") {
+      moreContent.style.display = "block";
+      btn.textContent = "Show Less";
+    } else {
+      moreContent.style.display = "none";
+      btn.textContent = "Show More";
+    }
+  }
+  </script>
 </body>
 
 </html>
+
+<!-- Template -->
+<template id="property-card-template">
+  <div class="col-md-4 mb-4">
+    <a href="#" class="text-decoration-none text-dark">
+      <div class="card-body position-relative bg-light rounded-top">
+        <img src="" class="img-fluid mb-3 rounded" alt="property image">
+        <span class="position-absolute top-50 end-0 translate-middle-y m-3 bg-white border rounded-pill px-3 py-1 shadow price-badge">Price</span>
+      </div>
+      <div class="card-footer bg-white text-start">
+        <h5 class="fw-bold mb-1 title">Title</h5>
+        <p class="text-muted mb-1 location">
+          <i class="bi bi-geo-alt-fill"></i> Location
+          <span class="ms-2 text-warning stars"></span>
+        </p>
+        <p class="mb-2 features">
+          <i class="fa fa-bed me-1" style="font-size:18px"></i> Bedrooms
+          <i class="fa fa-bath ms-3 me-1" style="font-size:18px"></i> Bathrooms
+          <i class="bi bi-car-front ms-3"></i> Parking
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span>Share</span>
+            <i class="bi bi-tiktok mx-1"></i>
+            <i class="bi bi-facebook mx-1"></i>
+            <i class="bi bi-instagram mx-1"></i>
+            <i class="bi bi-envelope mx-1"></i>
+            <i class="bi bi-twitter mx-1"></i>
+          </div>
+          <div>
+            <span>Like</span>
+            <i class="bi bi-hand-thumbs-up-fill ms-1"></i>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</template>

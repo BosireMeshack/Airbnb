@@ -7,24 +7,25 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/waiyaki way airbnb.jpeg",
-      "gallery": ["../assets/images/waiyakiway1.jpeg"],
+      "image": "../assets/images/waiyakiway/waiyakiwayairbnb.jpeg",
+      "gallery": ["../assets/images/waiyakiway/waiyakiway2.jpeg","../assets/images/waiyakiway/waiyakiway4.jpeg"],
       "reviews": 36,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=waiyaki+way+nairobi",
-      "video": "../assets/videos/waiyaki.mp4"
+      "video": "../assets/videos/waiyakiway.mp4"
     },
     {
       "id": "2",
       "title": "Kamakis Highway Homes",
       "location": "Kamakis",
-      "price": 6000,
+      "price": 2500,
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/kamakis.png",
-      "gallery": [],
+      "image": "../assets/images/kamakis/kamakis1.jpeg",
+      "gallery": ["../assets/images/kamakis/kamakis2.jpeg", "../assets/images/kamakis/kamakis4.jpeg"],
       "reviews": 28,
+      "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=kamakis+kenya",
        "video": "../assets/videos/waiyaki.mp4"
     },
@@ -36,12 +37,27 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/winchester1.jpeg",
-      "gallery": ["../assets/images/winchester2.jpeg", "../assets/images/winchester3.png"],
+      "image": "../assets/images/westlands/winchester1.jpeg",
+      "gallery": ["../assets/images/westlands/winchester2.jpeg", "../assets/images/westlands/winchester3.png"],
       "reviews": 42,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands",
-      "video": "../assets/videos/Operating the Master Lock.mp4"
+      "video": "../assets/videos/winchester video tour.mp4"
+    },
+    {
+      "id": "4",
+      "title": "Thika Road Homes",
+      "location": "Roysambu",
+      "price": 3000,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": true,
+      "image": "../assets/images/thikaroad.png",
+      "gallery": ["../assets/images/westlands/winchester2.jpeg", "../assets/images/westlands/winchester3.png"],
+      "reviews": 42,
+      "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
+      "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands",
+      "video": "../assets/videos/winchester video tour.mp4"
     }
   ]
   

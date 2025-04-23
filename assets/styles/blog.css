@@ -1,0 +1,61 @@
+
+.text-center {
+    margin-top:100px
+}
+.card {
+    margin-top: 20px;
+}
+
+img {
+    object-fit: cover;
+    
+}
+.centered-search-bar {
+    position: relative;
+    width: 500px;
+    margin: 50px auto;
+  }
+  
+  .centered-search-bar input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    padding-left: 50px; /* Extra space for the icon */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .centered-search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 18px;
+    color: #888;
+  }
+  
+
+  .meta-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+    color: #3b4672;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .meta-info i {
+    margin-right: 6px;
+  }
+  .meta-divider {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+  .custom-footer-row {
+    background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+    padding: 2rem;
+    border-radius: 8px;
+  }
