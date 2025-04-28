@@ -7,12 +7,12 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/waiyakiway/waiyakiwayairbnb.jpeg",
-      "gallery": ["../assets/images/waiyakiway/waiyakiway2.jpeg","../assets/images/waiyakiway/waiyakiway4.jpeg"],
+      "image": "../images/waiyakiway/waiyakiwayairbnb.jpeg",
+      "gallery": ["../images/waiyakiway/waiyakiway2.jpeg","../images/waiyakiway/waiyakiway4.jpeg"],
       "reviews": 36,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=waiyaki+way+nairobi",
-      "video": "../assets/videos/waiyakiway.mp4"
+      "video": "../videos/waiyakiway.mp4"
     },
     {
       "id": "2",
@@ -22,12 +22,12 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/kamakis/kamakis1.jpeg",
-      "gallery": ["../assets/images/kamakis/kamakis2.jpeg", "../assets/images/kamakis/kamakis4.jpeg"],
+      "image": "../images/kamakis/kamakis1.jpeg",
+      "gallery": ["../images/kamakis/kamakis2.jpeg", "../images/kamakis/kamakis4.jpeg"],
       "reviews": 28,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=kamakis+kenya",
-       "video": "../assets/videos/waiyaki.mp4"
+       "video": ""
     },
     {
       "id": "3",
@@ -37,12 +37,12 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/westlands/winchester1.jpeg",
-      "gallery": ["../assets/images/westlands/winchester2.jpeg", "../assets/images/westlands/winchester3.png"],
+      "image": "../images/westlands/winchester1.jpeg",
+      "gallery": ["../images/westlands/winchester2.jpeg", "../images/westlands/winchester3.png"],
       "reviews": 42,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands",
-      "video": "../assets/videos/winchester video tour.mp4"
+      "video": "../videos/winchester video tour.mp4"
     },
     {
       "id": "4",
@@ -52,12 +52,12 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "parking": true,
-      "image": "../assets/images/thikaroad.png",
-      "gallery": ["../assets/images/westlands/winchester2.jpeg", "../assets/images/westlands/winchester3.png"],
+      "image": "../images/thikaroad.png",
+      "gallery": ["../images/westlands/winchester2.jpeg", "../images/westlands/winchester3.png"],
       "reviews": 42,
       "features": ["High Speed Wi-Fi", "Netflix", "Kitchenette", "Air Conditioning", "Workspace", "Free Parking", "Cosv Bedroom", "Hot Shower", "Fully Fitted Gym", "24-Hour backup generator"],
       "mapLink": "https://www.google.com/maps?q=winchester+gardens+westlands",
-      "video": "../assets/videos/winchester video tour.mp4"
+      "video": "../videos/winchester video tour.mp4"
     }
   ]
   

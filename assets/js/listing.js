@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const listingId = urlParams.get("id");
 
-fetch("../assets/data/listing.json")
+fetch("../data/listing.json")
     .then((res) => res.json())
     .then((data) => {
         const listing = data.find((item) => item.id === listingId);
